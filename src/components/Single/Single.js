@@ -14,9 +14,22 @@ const Single = props => {
       onClick={isNew ? _ => props.markRead(id) : _ => props.markUnread(id)}
       className={"Single Cursor " + (isNew ? "BoldText" : "")}
     >
-      <p>From: {_from}</p>
-      <p>To: {_to}</p>
-      <p>Message: {text}</p>
+      <table>
+        <tbody>
+          <tr>
+            <td>From:</td>
+            <td>{_from}</td>
+          </tr>
+          <tr>
+            <td>To:</td>
+            <td>{_to}</td>
+          </tr>
+          <tr>
+            <td>Message:</td>
+            <td>{text}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }

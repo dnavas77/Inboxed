@@ -2,5 +2,6 @@
   margin: 30px auto;
   height: 600px;
   width: 400px;
-  background-color: salmon;
+  background-color: pink;
+  border-radius: 8px;
 }

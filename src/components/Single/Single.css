@@ -1,7 +1,10 @@
 .Single {
   text-align: left;
   position: relative;
-  background: pink;
+  background: white;
+  padding-left: 8px;
+  margin-top: 6px;
+  border: 1px solid lightgray;
 }
 
 .BoldText {
