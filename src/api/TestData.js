@@ -14,7 +14,7 @@ const data = {
       ],
       "direction": "in",
       "created_epoch": 1476659032,
-      "created_at": "2016-10-16T23:03:52+00:00",
+      "created_at": "2016-09-16T23:03:52+00:00",
       "is_new": false,
       "text": "We received this message",
     },
@@ -29,7 +29,7 @@ const data = {
       ],
       "direction": "out",
       "created_epoch": 1476659133,
-      "created_at": "2016-10-16T23:05:33+00:00",
+      "created_at": "2016-11-16T23:05:33+00:00",
       "is_new": true,
       "text": "We sent this message",
     },
@@ -48,7 +48,7 @@ const data = {
       ],
       "direction": "in",
       "created_epoch": 1476659032,
-      "created_at": "2016-10-16T23:03:52+00:00",
+      "created_at": "2016-08-16T23:03:52+00:00",
       "is_new": false,
       "text": "Hi, how you doing?",
     },
@@ -66,6 +66,21 @@ const data = {
       "created_at": "2016-10-16T23:05:33+00:00",
       "is_new": true,
       "text": "Want to have a coffee?",
+    },
+    {
+      "id": "8f7a99b834342343242332325a86d6c28344",
+      "from": "+17329910138",
+      "to": [
+        {
+        "number": "+17326838492",
+        "status": "sent"
+        }
+      ],
+      "direction": "out",
+      "created_epoch": 1476659133,
+      "created_at": "2016-10-15T23:05:33+00:00",
+      "is_new": true,
+      "text": "Are you joining us for dinner?",
     }
   ]
 }

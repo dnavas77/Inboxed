@@ -3,17 +3,19 @@ import './Single.css';
 
 const Single = props => {
   const data = props.data;
+  const direction = data.direction;
   const id = data.id;
   const _from = data.from;
   const _to = data.to.map(item => item.number).join(', ');
   const text = data.text;
   const isNew = data.is_new;
-  const created = new Date(data.created_at).toLocaleDateString();
+  const createdAt = new Date(data.created_at).toLocaleDateString();
+  const inboundMessage = direction === 'in';
 
   return (
     <div
       onClick={isNew ? _ => props.markRead(id) : _ => props.markUnread(id)}
-      className={"Single Cursor " + (isNew ? "BoldText" : "")}
+      className={"Single Cursor " + (isNew ? "Unread" : "")}
     >
       <table>
         <tbody>
@@ -31,7 +33,8 @@ const Single = props => {
           </tr>
         </tbody>
       </table>
-      <div className="Date">{created}</div>
+      <div className="Date">{createdAt}</div>
+      <div className={inboundMessage ? "ArrowLeft" : "ArrowRight"}></div>
     </div>
   );
 }

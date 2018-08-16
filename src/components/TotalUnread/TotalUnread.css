@@ -6,10 +6,18 @@
   padding-right: 10px;
 }
 
-.Number {
+.SomeUnread {
   display: inline;
-  background: black;
-  color: white;
+  background: salmon;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.AllRead {
+  display: inline;
+  background: gray;
+  color: #fff;
   border-radius: 20px;
   padding: 5px 10px;
 }

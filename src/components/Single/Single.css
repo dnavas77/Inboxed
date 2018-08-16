@@ -7,8 +7,10 @@
   border: 1px solid lightgray;
 }
 
-.BoldText {
+.Unread {
   font-weight: bold;
+  background: #ffefe2;
+  color: #3d3d3d;
 }
 
 .Cursor {
@@ -25,3 +27,30 @@
   right: 5px;
 }
 
+.ArrowRight {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 0 7px 9.3px;
+  border-color: transparent transparent transparent gray;
+  display: block;
+  float: right;
+  z-index: 3;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+}
+
+.ArrowLeft {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 9.3px 7px 0;
+  border-color: transparent gray transparent transparent;
+  display: block;
+  float: right;
+  z-index: 3;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+}
