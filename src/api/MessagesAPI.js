@@ -7,6 +7,10 @@ export default class API {
   }
 
   getMessages() {
-    return new Promise((res, rej) => setTimeout(res, 2000, data));
+    return new Promise((res, rej) => setTimeout(res, 1500, data));
+  }
+
+  updateReadStatus(id, wasRead) {
+    console.log('Read status updated for id: ' + id + '. was Read: ' + wasRead);
   }
 }
