@@ -1,7 +1,9 @@
 .Messages {
   margin: 30px auto;
-  height: 600px;
+  min-height: 100px;
   width: 400px;
   background-color: pink;
   border-radius: 8px;
+  color: #444;
+  padding-bottom: 50px;
 }

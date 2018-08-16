@@ -66,7 +66,7 @@ const data = {
       "created_at": "2016-10-16T23:05:33+00:00",
       "is_new": true,
       "text": "Want to have a coffee?",
-    },
+    }
   ]
 }
 

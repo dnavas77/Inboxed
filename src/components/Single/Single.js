@@ -8,6 +8,7 @@ const Single = props => {
   const _to = data.to.map(item => item.number).join(', ');
   const text = data.text;
   const isNew = data.is_new;
+  const created = new Date(data.created_at).toLocaleDateString();
 
   return (
     <div
@@ -30,6 +31,7 @@ const Single = props => {
           </tr>
         </tbody>
       </table>
+      <div className="Date">{created}</div>
     </div>
   );
 }

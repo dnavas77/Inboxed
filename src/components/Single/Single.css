@@ -1,6 +1,6 @@
 .Single {
-  text-align: left;
   position: relative;
+  text-align: left;
   background: white;
   padding-left: 8px;
   margin-top: 6px;
@@ -14,3 +14,14 @@
 .Cursor {
   cursor: pointer;
 }
+
+.Date {
+  font-size: 12px;
+  display: block;
+  float: right;
+  z-index: 3;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
