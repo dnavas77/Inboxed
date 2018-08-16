@@ -11,16 +11,17 @@ export default class API {
   }
 
   markRead(id) {
-    return this.updateReadStatus(id, true);
-  }
-
-  markUnread(id) {
     return this.updateReadStatus(id, false);
   }
 
-  updateReadStatus(id, wasRead) {
+  markUnread(id) {
+    return this.updateReadStatus(id, true);
+  }
+
+  updateReadStatus(id, isNew) {
     return new Promise((res, rej) => {
-      console.log('Read status updated for id: ' + id + '. was Read: ' + wasRead);
+      console.log('Read status updated for id: ' + id + '. Is New: ' + isNew);
+      res();
     });
   }
 }

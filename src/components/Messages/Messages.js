@@ -47,17 +47,21 @@ class Messages extends Component {
 
   markRead(id) {
     this.api.markRead(id).then(_ => {
-      this.updateReadStatus(id, true);
+      this.updateReadStatus(id, false);
     });
   }
 
   markUnread(id) {
     this.api.markUnread(id).then(_ => {
-      this.updateReadStatus(id, false);
+      this.updateReadStatus(id, true);
     });
   }
 
-  updateReadStatus(id, wasRead) {
+  updateReadStatus(id, isNew) {
+    const messages = this.state.messages;
+    const msg = messages.filter(msg => msg.id === id)[0];
+    msg.is_new = isNew;
+    this.setState({messages: messages});
     this.setTotalUnread();
   }
 

@@ -16,7 +16,7 @@ const MessagesContainer = props => {
     return (
       <div className="">
         { props.isLoading
-          ? 'loading...'
+          ? <div className="lds-facebook"><div></div><div></div><div></div></div>
           : list
         }
       </div>
