@@ -1,4 +1,4 @@
-export default = {
+const data = {
   "total": 2,
   "offset": 0,
   "limit": 25,
@@ -35,3 +35,5 @@ export default = {
     },
   ]
 }
+
+export default data;
