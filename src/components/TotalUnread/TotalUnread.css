@@ -1,0 +1,15 @@
+.Main {
+  height: 50px;
+  width: 100%;
+  text-align: right;
+  line-height: 50px;
+  padding-right: 10px;
+}
+
+.Number {
+  display: inline;
+  background: black;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}

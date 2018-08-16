@@ -10,7 +10,17 @@ export default class API {
     return new Promise((res, rej) => setTimeout(res, 1500, data));
   }
 
+  markRead(id) {
+    return this.updateReadStatus(id, true);
+  }
+
+  markUnread(id) {
+    return this.updateReadStatus(id, false);
+  }
+
   updateReadStatus(id, wasRead) {
-    console.log('Read status updated for id: ' + id + '. was Read: ' + wasRead);
+    return new Promise((res, rej) => {
+      console.log('Read status updated for id: ' + id + '. was Read: ' + wasRead);
+    });
   }
 }

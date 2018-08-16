@@ -46,11 +46,19 @@ class Messages extends Component {
   }
 
   markRead(id) {
-    // TODO: implement
+    this.api.markRead(id).then(_ => {
+      this.updateReadStatus(id, true);
+    });
   }
 
   markUnread(id) {
-    // TODO: implement
+    this.api.markUnread(id).then(_ => {
+      this.updateReadStatus(id, false);
+    });
+  }
+
+  updateReadStatus(id, wasRead) {
+    this.setTotalUnread();
   }
 
   render() {
@@ -61,8 +69,7 @@ class Messages extends Component {
           isLoading={this.state.isLoading}
           markRead={this.markRead}
           markUnread={this.markUnread}
-          messages={this.state.messages}
-        />
+          messages={this.state.messages}/>
       </div>
     );
   }

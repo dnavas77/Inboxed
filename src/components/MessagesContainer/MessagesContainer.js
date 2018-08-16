@@ -6,7 +6,11 @@ import Single from '../Single/Single';
 
 const MessagesContainer = props => {
     const list = props.messages.map(
-      msg => <Single key={msg.id} data={msg} />
+      msg => <Single
+              key={msg.id}
+              data={msg}
+              markRead={props.markRead}
+              markUnread={props.markUnread}/>
     );
 
     return (

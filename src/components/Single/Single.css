@@ -3,3 +3,11 @@
   position: relative;
   background: pink;
 }
+
+.BoldText {
+  font-weight: bold;
+}
+
+.Cursor {
+  cursor: pointer;
+}

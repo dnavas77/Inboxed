@@ -3,7 +3,9 @@ import './TotalUnread.css';
 
 const TotalUnread = props => {
   return (
-    <div className="">Total Unread: {props.total}</div>
+    <div className="Main">
+      Unread: <div className="Number">{props.total}</div>
+    </div>
   );
 }
 

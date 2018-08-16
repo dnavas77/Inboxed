@@ -2,18 +2,23 @@ import React from 'react';
 import './Single.css';
 
 const Single = props => {
-    const data = props.data;
-    const _from = data.from;
-    const _to = data.to.map(item => item.number).join(', ');
-    const text = data.text;
+  const data = props.data;
+  const id = data.id;
+  const _from = data.from;
+  const _to = data.to.map(item => item.number).join(', ');
+  const text = data.text;
+  const isNew = data.is_new;
 
-    return (
-      <div className="Single">
-        <p>From: {_from}</p>
-        <p>To: {_to}</p>
-        <p>Message: {text}</p>
-      </div>
-    );
+  return (
+    <div
+      onClick={isNew ? _ => props.markRead(id) : _ => props.markUnread(id)}
+      className={"Single Cursor " + (isNew ? "BoldText" : "")}
+    >
+      <p>From: {_from}</p>
+      <p>To: {_to}</p>
+      <p>Message: {text}</p>
+    </div>
+  );
 }
 
 export default Single;
