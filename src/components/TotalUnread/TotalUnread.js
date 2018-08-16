@@ -1,14 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './TotalUnread.css';
 
-class TotalUnread extends Component {
-  render() {
-    return (
-      <div className="well">
-        Total Unread: 3
-      </div>
-    );
-  }
+const TotalUnread = props => {
+  return (
+    <div className="">Total Unread: {props.total}</div>
+  );
 }
 
 export default TotalUnread;
